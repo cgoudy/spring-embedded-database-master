@@ -1,0 +1,6 @@
+com/rest/servlet3/MyWebInitializer.class
+com/rest/web/controller/RestfulService.class
+com/rest/config/SpringRootConfig.class
+com/rest/config/SpringWebConfig.class
+com/rest/config/db/HsqlDataSource.class
+com/rest/dao/NoteDaoImpl$1.class
