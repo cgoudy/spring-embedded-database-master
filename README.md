@@ -7,7 +7,7 @@ Simple Note Taking REST app
 
 ###2. To Run this project locally
 a) $ git clone https://github.com/rest/spring-embedded-database
-b) $ mvn package
+b) $ mvn package (from root projuect directory)
 
 ###3. Import war file into running Tomcat instance
 
