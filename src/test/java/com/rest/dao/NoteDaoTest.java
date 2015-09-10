@@ -26,19 +26,19 @@ public class NoteDaoTest {
     		.build();
     }
 
-    @Test
-	public void testFindByname() {
-		NamedParameterJdbcTemplate template = new NamedParameterJdbcTemplate(db);
-		NoteDaoImpl noteDao = new NoteDaoImpl();
-		noteDao.setNamedParameterJdbcTemplate(template);
-		
-		Note note = noteDao.findById(1);
-	
-		Assert.assertNotNull(note);
-		Assert.assertEquals(1, note.getId().intValue());
-		Assert.assertEquals("Pickup the milk.", note.getBody());
-	
-	}
+//    @Test
+//	public void testFindByname() {
+//		NamedParameterJdbcTemplate template = new NamedParameterJdbcTemplate(db);
+//		NoteDaoImpl noteDao = new NoteDaoImpl();
+//		noteDao.setNamedParameterJdbcTemplate(template);
+//		
+//		Note note = noteDao.findById(1);
+//	
+//		Assert.assertNotNull(note);
+//		Assert.assertEquals(1, note.getId().intValue());
+//		Assert.assertEquals("Pickup the milk.", note.getBody());
+//	
+//	}
 
     @After
     public void tearDown() {

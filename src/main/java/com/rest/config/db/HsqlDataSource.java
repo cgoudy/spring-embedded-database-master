@@ -21,7 +21,6 @@ public class HsqlDataSource {
 		EmbeddedDatabase db = builder
 				.setType(EmbeddedDatabaseType.HSQL)
 				.addScript("db/sql/create-db.sql")
-				.addScript("db/sql/insert-data.sql")
 				.build();
 		return db;
 	}

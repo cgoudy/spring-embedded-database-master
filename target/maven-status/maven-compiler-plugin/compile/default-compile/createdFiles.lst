@@ -1,4 +1,8 @@
+com/rest/dao/NoteDaoImpl.class
+com/rest/dao/NoteDao.class
 com/rest/servlet3/MyWebInitializer.class
+com/rest/model/Note.class
+com/rest/dao/NoteDaoImpl$NoteMapper.class
 com/rest/web/controller/RestfulService.class
 com/rest/config/SpringRootConfig.class
 com/rest/config/SpringWebConfig.class

@@ -102,7 +102,6 @@ public class NoteDaoImpl implements NoteDao {
 			db = new EmbeddedDatabaseBuilder()
 				.setType(EmbeddedDatabaseType.HSQL)
 				.addScript("db/sql/create-db.sql")
-				.addScript("db/sql/insert-data.sql")
 				.build();
 			namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(db);
 		}

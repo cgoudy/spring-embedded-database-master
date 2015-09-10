@@ -25,7 +25,7 @@ public class SpringRootConfig {
 	@PostConstruct
 	public void startDBManager() {
 		
-		DatabaseManagerSwing.main(new String[] { "--url", "jdbc:hsqldb:mem:testdb", "--user", "sa", "--password", "" });
+		DatabaseManagerSwing.main(new String[] { "--url", "jdbc:hsqldb:mem:db", "--user", "sa", "--password", "" });
 
 	}
 

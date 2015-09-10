@@ -1,25 +1,22 @@
-Spring Embedded Database
-===============================
-Template for a Spring 4 MVC + Embedded Database examples, using HSQLDB, H2 and Derby.
+Simple Note Taking REST app
 
 ###1. Technologies used
 * Maven 3.0
 * Spring 4.1.6.RELEASE
 * HSQLDB 2.3.2
-* H2 1.4.187
-* Derby 10.11.1.1
 
 ###2. To Run this project locally
 ```shell
 $ git clone https://github.com/rest/spring-embedded-database
-$ mvn jetty:run
+$ mvn package
+
+###3. Import war file into running Tomcat instance
+
+
 ```
-Access ```http://localhost:8080/spring-mvc-db/```
+Access `http://localhost:8080/spring-mvc-embedded-db-1.0-SNAPSHOT/api/notes`
 
-###3. To import this project into Eclipse IDE
-1. ```$ mvn eclipse:eclipse```
-2. Import into Eclipse via **existing projects into workspace** option.
-3. Done.
-
-###4. Project Demo
-Please refer to this article [Spring Embedded Database  examples](http://www.rest.com/spring/spring-embedded-database-examples/)
+1) How well does your note-searching-api scale or not scale? How would you make your search more efficient? I think it is very scalable....the biggest thing that would limit it would be the "like" search for parts of a note with the %bar% pattern guarantees a table-scan for every lookup.
+2) How would you add security to your API? You could add security on the endpoints with something like the OAUTH package which would allow you to secure any and all the endpoints.
+3) What features should we add to this API next? 1) PUT to overwrites (updates) a pre-existing note and 2) DELETE to delete existing notes
+4) How would you test the API? A sample test is included in the test directory.
