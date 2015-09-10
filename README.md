@@ -6,12 +6,16 @@ Simple Note Taking REST app
 * HSQLDB 2.3.2
 
 ###2. To Run this project locally
-$ git clone https://github.com/rest/spring-embedded-database
-$ mvn package
+a) $ git clone https://github.com/rest/spring-embedded-database
+b) $ mvn package
 
 ###3. Import war file into running Tomcat instance
 
-###4. You can a) Add a note (POST /api/notes, b) Get all notes (GET /api/notes), c) Get a specific note (GET /api/notes/{id}), d) Get a note by note content (GET /api/notes/?content=somethingToSearchOn)
+###4. You can 
+a) Add a note (POST /api/notes
+b) Get all notes (GET /api/notes)
+c) Get a specific note (GET /api/notes/{id})
+d) Get a note by note content (GET /api/notes/?content=somethingToSearchOn)
 
 ###5. Access `http://localhost:8080/spring-mvc-embedded-db-1.0-SNAPSHOT/api/notes`
 
